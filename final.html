@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+	<meta name='viewport' content='initial-scale=1.0'>
+	<meta charset='UTF-8'>
+	<title>Flights</title>
+
+	<link rel='stylesheet' type='text/css' href='style.css'>
+	<link href="https://fonts.googleapis.com/css?family=Advent+Pro|Cormorant|Cutive+Mono|Dosis" rel="stylesheet">
+
+<script src="http://www.cs.unc.edu/~kmp/comp426fall18/jquery-3.3.1.js"></script>
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+       rel = "stylesheet">
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src='final.js'></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYJwgKAeFSBa2zzliPktFeIJWGdki0bwk"></script>
+</head>
+
+<body>
+	<!-- <div id='map'></div> -->
+
+	<div id='login_div'></div>
+
+	<div id='search_div'>
+		<div class='filter-div'>
+			<h1 id='filter_header'>Let's explore places.</h1>
+			<h2>
+				I'm leaving <select name='departure' class='select-filter' id='departure'></select>
+				for <select name='arrival' class='select-filter' id='arrival'></select>
+			</h2>
+			
+			<h2>& flying
+				<select name='onewayroundtrip' class='select-filter' id='onewayroundtrip'>
+					<option value='one-way'>one-way</option>
+					<option value='roundtrip'>roundtrip</option>
+				</select> with <select name='airline' class='select-filter' id='airline'></select>...
+			</h2>
+			<br>
+			<button id='search' onclick='search()'>Search</button>
+		</div>
+	</div>
+
+	<div id='book_div'></div>
+
+	<div id='itinerary_div'>
+		<button type="button" onclick = "goHome()" id="home">Return Home</button>
+		<h2 id="search_trips">Search trips: <input class='input' type= 'text' placeholder = '...by airport code' id = 'search_tickets'></input></h2>
+		<br>
+		<div id='map'></div>
+	</div>
+
+	<!-- <img src="logo.png" width="100" height="100"> -->
+	<!-- <img src="ticketlogo.png" width="100"> -->
+
+</body>
+
+</html>

@@ -1,0 +1,285 @@
+body {
+    background-color: #98a59b;
+    color: black;
+    font-family: 'Cutive Mono', monospace;
+}
+
+body::after {
+    content: "";
+    display: block;
+    position: fixed;
+    background-repeat: repeat-y;
+    z-index: -1;
+    width:100%;
+    height:100%;
+    background-image: url("bg.jpg");
+    background-size: 100% auto;
+    background-repeat: repeat;
+    opacity: 0.50;
+    top: 0;
+    left: 0;
+    /* bottom: 0;
+    right: 0; */
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    /* justify-items: right; */
+    /* text-align: left; */
+}
+
+#login_div {
+    align-items: left;
+    text-align: left;
+    width: 50vw;
+    float: left;
+    padding: 100px;
+    text-align: left;
+}
+
+#flights_div {
+    width: 75vw;
+}
+
+#map {
+    height: 50vh;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+}
+
+#search-trips {
+    left: 50%;
+}
+
+h1 {
+    font-size: 7.5vh;
+}
+
+#filter_header {
+    align-self: center;
+}
+
+h2 {
+    margin: 0;
+    font-size: 5vh;
+}
+
+h3 {
+    font-size: 2.5vh;
+}
+
+input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 3vh;
+    outline: none;
+    text-transform: uppercase;
+}
+
+input:hover {
+    background: white;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 2.5vh;
+    margin: 5px;    
+    padding: 10px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+.dep_flight {
+    background-color: #3b575b;
+    color: white;
+    text-align: left;
+    align-self: center;
+    margin: 10px;
+    padding: 2em;
+    width: 75%;
+}
+
+.arr_flight {
+    background-color: #3b575b;
+    color: white;
+    text-align: left;
+    align-self: center;
+    margin: 10px;
+    padding: 2em;
+    width: 75%;
+}
+
+.itin {
+    background-color: #3b575b;
+    color: white;
+    text-justify: left;
+    text-align: left;
+    margin: 10px;
+    padding: 2em;
+}
+
+#itinerary_div {
+    width: 75vw;
+    /* justify-content: center;
+    justify-items: center; */
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+#login_btn {
+    width: 10vw;
+}
+
+#button_ticket {
+    width: 10vw;
+}
+
+#search {
+    width: 10vw;
+    align-self: flex-end;
+}
+
+.book {
+    background-color: white;
+    color: #3b575b;
+    font-size: 3vh;
+    align-self: flex-end;
+}
+
+.book:hover {
+    background-color: #3b575b;
+    color: white;
+}
+
+#show_map {
+    background-color: white;
+    color: #3b575b;
+    font-size: 3vh;
+}
+
+#show_map:hover {
+    color: white;
+    background-color: #3b575b;
+}
+
+#back {
+    background-color: white;
+    color: #3b575b;
+    font-size: 3vh;
+}
+
+#back:hover {
+    color: white;
+    background-color: #3b575b;
+}
+
+.back{
+    background-color: white;
+    font-size: 1.5vh;
+}
+
+#search_div {
+    margin: auto;
+    width: 85vw;
+    height: 85vh;
+    justify-content: center;
+}
+
+.filter-div {
+    margin: auto;
+    /* align-content: left; */
+    /* align-items: left; */
+    /* text-align: left; */
+}
+
+#flights_interface {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: left;
+    padding-top: 5em;
+    /* width: 85vw; */
+    /* overflow-y: auto; */
+}
+
+#home {
+    width: 10vw;
+    align-self: center;
+    width: 25%;
+    padding: 20px;
+}
+
+.select-filter {
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: 'Cutive Mono', monospace;
+    /* font-size: 3vh; */
+    margin: 5px;    
+    padding: 10px;
+    /* width: 25vw; */
+}
+
+select {
+    text-align-last: center;
+    margin: 5px;
+    padding: 10px;
+    width: 20vw;
+    font-size: 3vh;
+    text-transform: uppercase;
+}
+
+#book_div {
+    /* width: 50vw;
+    height: 50vh; */
+    /* padding-top: 2em; */
+    /* justify-content: center; */
+    align-content: left;
+    align-items: left;
+    text-align: left;
+    /* justify-self: center; */
+
+    position: absolute;
+    top: 5%;
+    left: 25%;
+}
+
+#tic_logo_div {
+    float: right;
+}
+
+/* img {
+    position: absolute;
+    right: 75px;
+    top: 75px;
+} */
+
+#ticketlogo {
+    position: relative;
+    top: 0;
+    right: 5px;
+}
+
+#ticket-logo.resize {
+    /* width: 50px; */
+    width: 100%;
+    height: auto;
+}
+
+/* input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 50px black inset;
+    -webkit-text-fill-color: white;
+    -webkit-font-family: 'Cutive Mono', monospace;
+} */
